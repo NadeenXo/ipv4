@@ -25,3 +25,6 @@ jobs:
 
       - name: Run tests
         run: mvn test
+
+      - name: Run Ktlint
+        run: mvn ktlint:check
