@@ -54,6 +54,10 @@
                 <version>2.22.2</version>
             </plugin>
             <plugin>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>2.22.2</version>
+            </plugin>
+            <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.6.0</version>
@@ -62,25 +66,6 @@
                 </configuration>
             </plugin>
 
-
-            <plugin>
-                <groupId>com.pinterest.ktlint</groupId>
-                <artifactId>ktlint-core</artifactId>
-                <version>0.48.2</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>ktlintCheck</goal> <!-- Ktlint check goal -->
-                        </goals>
-                    </execution>
-                    <execution>
-                        <goals>
-                            <goal>ktlintFormat</goal> <!-- Optional: Ktlint format goal -->
-                        </goals>
-                        <phase>process-sources</phase> <!-- Format on build -->
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
     </build>
 
